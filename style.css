@@ -50,4 +50,13 @@ body {
 
   #titleintentos{
     display: none;
+    text-align: center;
   }
+
+  .centrado {
+    text-align: center;
+  }
+#pista{
+    display: none;
+    text-align: center;
+}
