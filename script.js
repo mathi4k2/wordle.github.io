@@ -2,7 +2,7 @@
 let intentos = 6;
 
 //definicion de la API
-const API = "https://random-word-api.vercel.app/api?words=1&length=5"
+const API = "https://random-word-api.herokuapp.com/word?lang=es&length=5"
 fetch(API)
     //solicitar respuesta a la API en formato json
     .then(response => response.json())
@@ -61,7 +61,7 @@ function init(){
                 intentos--
             //impresion en pantalla si se llega al limite de intentos (6)
             if (intentos==0){
-                terminar("<h1>PERDISTE!😖</h1>")
+                terminar("<h1>PERDISTE!😖</h1> <p>La palabra era: </p>" +palabra)
             }
     }
 
